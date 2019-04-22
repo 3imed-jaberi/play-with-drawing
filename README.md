@@ -1,6 +1,6 @@
 # PLAY-WITH-DRAWING 
 ---
-#### This project is simple white board for drawing then save your picture in the ``` images ``` folders .. 
+#### This project is a simple white board for drawing then save your picture in the ``` images ``` folders .. 
 #### All kids will have a fun time with this project ...
 
 ## What technologies that i used ?
