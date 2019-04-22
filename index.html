@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <title>Canvas HTML5</title>
+          <!-- Bootstrap 4.3.1 CDN -->
+          <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">          
+          <!-- my Style -->
+          <style>
+                    label {
+                       font-weight: bold ;     
+                    }
+
+                    #myCan {
+                       border: 1px solid black ;
+                    }
+                    
+                    #drawhere {
+                       width: 800px ;      
+                    }
+
+                    .container {
+                       padding-top : 50px ;     
+                    }
+
+          </style>
+</head>
+<body>
+    <div class="container">
+                    <center>
+          <canvas id="myCan" width="800" height="480"></canvas>     
+          <div id="drawhere"> 
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div id="save" class="btn btn-primary"> SAVE </div>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div id="clear" class="btn btn-danger"> CLEAR </div> <br/><br/>
+                    <label for="pen-color"> Choose the pen color : </label>
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="pen-color" type="color" /><br/><br/>
+                    <label for="pen-color"> Choose the pen size : </label> 
+                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input id="pen-width" type="range" min="1" max="30" />
+          </div>
+
+          <img id="canvas-result" style="display:none;" />
+                    </center>
+    </div>
+
+    <!-- SweetAlert CDN -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!-- jQuery 3.3.1 CDN -->
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg=" crossorigin="anonymous"></script>
+    <!-- my Script -->
+    <script src="scripts/script.js"></script>
+</body>
+</html>
